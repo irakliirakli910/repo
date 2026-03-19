@@ -61,13 +61,18 @@
 // main();
 
 function writeDown(a, b) {
-  let e = document.getElementById("ans");
-  e.innerHTML = a + b;
+  /* let e = document.getElementById("ans");
+  e.innerHTML =a + b;*/
+  let e = document.querySelector("div p");
+  e.textContent = a + b;
 }
 
 function calculate() {
-  let x = document.getElementById("numberF").value;
-  let y = document.getElementById("numberS").value;
+  /*let x = document.getElementById("numberF").value;
+  let y = document.getElementById("numberS").value;*/
+
+  let x = document.querySelector("#numberF").value;
+  let y = document.querySelector("#numberS").value;
   x = parseInt(x);
   y = parseInt(y);
 
