@@ -70,7 +70,7 @@ function calculate() {
   /*let x = document.getElementById("numberF").value;
   let y = document.getElementById("numberS").value;*/
 
-  let x = document.querySelector("#numberF").value;
+  let x = document.querySelector("div div input").value;
   let y = document.querySelector("#numberS").value;
   let op = document.querySelector("#op").value;
   x = parseInt(x);
@@ -79,10 +79,10 @@ function calculate() {
 
   switch (op) {
     case "+":
-      e.textContent = x + y;
+      e.textContent = x + "+" + y + " = " + (x + y);
       break;
     case "-":
-      e.textContent = x - y;
+      e.textContent = `${x} - ${y}=${x - y}`;
       break;
     case "*":
       e.textContent = x * y;
